@@ -53,7 +53,6 @@ export default function Provider() {
           <Button type="primary">Incluir</Button>
           <Button type="primary" danger>Excluir</Button>
           <Button type="primary">Salvar</Button>
-
         </div>
       </form>
     </div>
