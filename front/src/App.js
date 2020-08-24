@@ -1,12 +1,10 @@
 import React from 'react';
+import './global.css';
+import Router from './router';
 
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
-  );
+  return <Router />
 }
 
 export default App;
