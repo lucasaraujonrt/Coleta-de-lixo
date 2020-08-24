@@ -25,12 +25,10 @@ export default function Provider({ children }) {
         <div className="provider-form__input">
           <Row gutter={16}>
             <Col span={8}>
-              <label>CNPJ/CPF</label>
-              <Input placeholder="508.127.628-60" />
+              <AdvancedInput label="CNPJ/CPG" placeholder="508.127.628-60" maxLength={20} />
             </Col>
             <Col span={8}>
-              <label>I.E</label>
-              <Input placeholder="508.127.628-60" />
+              <AdvancedInput label="I.E" placeholder="508.127.628-60" maxLength={20} />
             </Col>
           </Row>
         </div>
@@ -38,8 +36,7 @@ export default function Provider({ children }) {
         <div className="provider-form__input">
           <Row gutter={16}>
             <Col span={8}>
-              <label>Endereço</label>
-              <Input placeholder="Av Marechal Rondon" />
+              <AdvancedInput label="Endereço" placeholder="Av Marechal Rondon" maxLength={40} />
             </Col>
           </Row>
         </div>
@@ -47,12 +44,10 @@ export default function Provider({ children }) {
         <div className="provider-form__input">
           <Row gutter={16}>
             <Col span={8}>
-              <label>Número</label>
-              <Input placeholder="2044" />
+              <AdvancedInput label="Número" placeholder="2044" maxLength={10} />
             </Col>
             <Col span={8}>
-              <label>Complemento</label>
-              <Input placeholder="apto 33" />
+              <AdvancedInput label="Complemento" placeholder="apto 33" maxLength={20} />
             </Col>
           </Row>
         </div>
@@ -60,12 +55,10 @@ export default function Provider({ children }) {
         <div className="provider-form__input">
           <Row gutter={16}>
             <Col span={8}>
-              <label>Bairro</label>
-              <Input placeholder="Jardin Chapadão" />
+              <AdvancedInput label="Bairro" placeholder="Jardin Chapadão" maxLength={40} />
             </Col>
             <Col span={8}>
-              <label>CEP</label>
-              <Input placeholder="13070-172" />
+              <AdvancedInput label="CEP" placeholder="13070-172" maxLength={9} />
             </Col>
           </Row>
         </div>
@@ -73,8 +66,7 @@ export default function Provider({ children }) {
         <div className="provider-form__input">
           <Row gutter={16}>
             <Col span={8}>
-              <label>Munícipio</label>
-              <Input placeholder="Campinas" />
+              <AdvancedInput label="Munícipio" placeholder="Campinas" maxLength={40} />
             </Col>
             <Col span={8}>
               <Dropdown placement="bottomLeft" arrow>
@@ -87,12 +79,10 @@ export default function Provider({ children }) {
         <div className="provider-form__input">
           <Row gutter={16}>
             <Col span={8}>
-              <label>Fone</label>
-              <Input placeholder="(19) 99755-2541" />
+              <AdvancedInput label="Telefone" placeholder="(19) 99755-2541" maxLength={14} />
             </Col>
             <Col span={8}>
-              <label>E-mail</label>
-              <Input placeholder="lucas.araujo@mblabs.com" />
+              <AdvancedInput label="E-mail" placeholder="lucas.araujo@mblabs.com" maxLength={40} />
             </Col>
           </Row>
         </div>
