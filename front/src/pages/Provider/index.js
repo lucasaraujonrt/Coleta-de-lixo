@@ -1,23 +1,23 @@
 import React from 'react';
 import { Input, Dropdown, Button, Row, Col, Divider } from 'antd';
+import AdvancedInput from '../../components/AdvancedInput'
 import './styles.scss'
 
 
-export default function Provider() {
+export default function Provider({ children }) {
   return (
     <div className="provider_container">
       <div className="provider_container__title">
         <h1>Cadastro de fornecedores</h1>
       </div>
 
-      <Divider />
+      <Divider style={{ color: "#FFF" }} />
 
       <form className="provider-form">
         <div className="provider-form__input">
           <Row gutter={16}>
             <Col span={8}>
-              <label>Razão social</label>
-              <Input placeholder="Solteiro" />
+              <AdvancedInput label="Razão social" placeholder="Solteiro" maxLength={40} />
             </Col>
           </Row>
         </div>
@@ -109,9 +109,6 @@ export default function Provider() {
               <Button type="primary" danger className="provider-form__button__delete">
                 Excluir
               </Button>
-            </Col>
-            <Col span={6}>
-              <Button type="primary" className="provider-form__button__save">Salvar</Button>
             </Col>
           </Row>
         </div>
