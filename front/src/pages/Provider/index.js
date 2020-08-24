@@ -100,16 +100,18 @@ export default function Provider() {
         <div className="provider-form__button">
           <Row gutter={16}>
             <Col span={6}>
-              <Button type="primary">Procurar</Button>
+              <Button type="primary" className="provider-form__button__search">Procurar</Button>
             </Col>
             <Col span={6}>
-              <Button type="primary">Incluir</Button>
+              <Button type="primary" className="provider-form__button__include">Incluir</Button>
             </Col>
             <Col span={6}>
-              <Button type="primary" danger>Excluir</Button>
+              <Button type="primary" danger className="provider-form__button__delete">
+                Excluir
+              </Button>
             </Col>
             <Col span={6}>
-              <Button type="primary">Salvar</Button>
+              <Button type="primary" className="provider-form__button__save">Salvar</Button>
             </Col>
           </Row>
         </div>
