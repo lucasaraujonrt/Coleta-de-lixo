@@ -16,7 +16,7 @@ export default function Provider({ children }) {
       <form className="provider-form">
         <div className="provider-form__input">
           <Row gutter={16}>
-            <Col span={8}>
+            <Col span={16}>
               <AdvancedInput label="Razão social" placeholder="Solteiro" maxLength={40} />
             </Col>
           </Row>
