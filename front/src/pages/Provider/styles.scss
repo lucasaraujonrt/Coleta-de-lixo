@@ -1,0 +1,27 @@
+.provider_container{
+  background-color: #34495E;
+
+  &__title{
+    display: flex;
+    justify-content: center;
+    font-size: 16pt;
+    color: #fff
+  }
+}
+
+.provider-form{
+  padding: 100px;
+  &__input{
+    width: 100%;
+    flex-direction: row;
+    font-size: 14pt;
+    color: white;
+  }
+
+  &__button{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    margin-left: 10px;
+  }
+}
