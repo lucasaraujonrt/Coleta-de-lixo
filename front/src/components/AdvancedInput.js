@@ -2,12 +2,14 @@ import React from 'react';
 import { Input } from 'antd';
 
 
+
 export default function AdvancedInput({
   label,
   onChange,
   placeholder,
   maxLength,
-  value
+  value,
+  mask
 }) {
   return (
     <div className="advanced-input">
@@ -20,7 +22,6 @@ export default function AdvancedInput({
           maxLength={maxLength}
           placeholder={placeholder}
           value={value || null}
-          
         />
       </div>
     </div>

@@ -29,16 +29,33 @@
      padding: 0 .8rem .8rem 0.8rem;
      font-weight: bold !important;
      
-  
-      &__include{
-        background-color:#F0D032!important;
-        border-color:#F0D032 !important;
-      }
+    
+    &__search{
+      background-color: #40A9FF !important;
+      color: white !important;
+      border-color: #40A9FF !important;
+     }
+     &__search:hover{
+      background-color: #40A9FF !important;
+      color: white !important;
+      border-color: #40A9FF !important;
+     }
+    &__delete{
+      background-color: red !important;
+      color: white !important;
+      border-color: red !important;
+    }
 
-      &__include:hover{
-        background-color:#F0D032!important;
-        border-color:#F0D032 !important;
-      }
+    &__include{
+      background-color:#F0D032!important;
+      border-color:#F0D032 !important;
+      color: white !important;
+    }
+
+    &__include:hover{
+      background-color:#F0D032!important;
+      border-color:#F0D032 !important;
+    }
 
     
 
