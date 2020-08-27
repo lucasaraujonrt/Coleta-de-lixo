@@ -1,62 +1,74 @@
-.provider_container{
-  background-color: #34495E;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.provider-container{
   width: 100%;
-  border: none;
-
+  max-width: 1120px;
+  margin: 100px auto;
+  background-color: #34495E;
+  padding: 96px;
 
   &__title{
+    color: white;
+    font-weight: bold;
+  }
+  
+  
+}
+  
+.provider-form{
+    font: 400 14px Poppins, sans-serif;
+    width: 100%;
+    max-width: 450px;
+    margin-left: 100px;
+    &__input{
+      display: flex;
+      padding: 10px 0 0 0;
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+
+  &__button{
     display: flex;
-    justify-content: center;
-    font-size: 16pt;
-    color: #fff !important;
-    border: none;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin-left: 150px;
+    padding: 30px;
+
+    &__search{
+      background-color: #2B91CC !important;
+      border-color: #2B91CC !important;
+      color: white !important;
+    }
+    &__include{
+      background-color: #DCBD09!important;
+      border-color: #DCBD09 !important;
+      color: white !important;
+      padding: 4px 15px;
+      border-radius: 2px;
+      touch-action: manipulation;
+      border: 1px solid transparent;
+    }
+    &__delete{
+      background-color: #E11839!important;
+      border-color: #E11839 !important;
+      color: white !important;
+    }
+     &__save{
+      background-color: #2BCC6D!important;
+      border-color: #2BCC6D !important;
+      color: white !important;
+    }
   }
 }
 
-.provider-form{
-
-  &__input{
-    width: 100%;
-    flex-direction: row;
-    font-size: 16pt; 
-    padding: 1.8rem;
-  }
-
-  &__button{
-    
-     padding: 0 .8rem .8rem 0.8rem;
-     font-weight: bold !important;
-     
-    
-    &__search{
-      background-color: #40A9FF !important;
-      color: white !important;
-      border-color: #40A9FF !important;
-     }
-     &__search:hover{
-      background-color: #40A9FF !important;
-      color: white !important;
-      border-color: #40A9FF !important;
-     }
-    &__delete{
-      background-color: red !important;
-      color: white !important;
-      border-color: red !important;
-    }
-
-    &__include{
-      background-color:#F0D032!important;
-      border-color:#F0D032 !important;
-      color: white !important;
-    }
-
-    &__include:hover{
-      background-color:#F0D032!important;
-      border-color:#F0D032 !important;
-    }
-
-    
 
 
-  }
+
+
+
+label{
+  font-size: 14pt;
+  color: white
 }
