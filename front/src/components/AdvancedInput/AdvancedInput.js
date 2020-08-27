@@ -1,25 +1,24 @@
 import React from 'react';
-import { Input } from 'antd';
-
+import './styles.scss'
+import MaskedInput from 'react-input-mask';
 
 
 export default function AdvancedInput({
   label,
   onChange,
   placeholder,
-  maxLength,
   value,
-  mask
+  mask,
 }) {
   return (
     <div className="advanced-input">
       <div className="advanced-input-title">
         <label>{label}</label>
       </div>
-      <div className="advanced-input-title">
-        <Input
+      <div className="advanced-input__input">
+        <MaskedInput
+          mask={mask}
           onChange={onChange}
-          maxLength={maxLength}
           placeholder={placeholder}
           value={value || null}
         />
