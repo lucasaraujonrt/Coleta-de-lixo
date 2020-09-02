@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import './styles.scss';
 import api from '../../api';
 
+import Logo from '../../assets/logo_menu_retina.png'
+
 
 export default function Provider() {
   const [company_name, setCompany_name] = useState("");
@@ -47,13 +49,27 @@ export default function Provider() {
 
     }
     catch (error) {
+      if (error === "Error_in_Company Name") {
+        toast.error('Porfavor insira a razão social!')
+      }
       console.log(error)
-      toast.error('Erro ao cadastrar fornecedor, tente novamenta mais tarde!!');
     }
   }
 
   return (
     <>
+      {/* <div>
+        <nav className="navbar">
+
+        </nav>
+      </div>
+      <div className="sidebar">
+        <div className="sidebar-container">
+          <div className="sidebar-container__logo">
+            <img alt="Logo" src={Logo} className="image-logo" />
+          </div>
+        </div>
+      </div> */}
       <div className="provider-container">
         <ToastContainer
           position="top-center"
@@ -215,18 +231,12 @@ export default function Provider() {
           </div>
 
           <div className="provider-form__button">
-            <Button type="submit" className="provider-form__button__search">
-              Procurar
+            <Button type="submit" className="provider-form__button__delete">
+              Cancelar
             </Button>
             <button type="submit" className="provider-form__button__include">
-              Incluir
+              Adicionar
             </button>
-            <Button type="submit" className="provider-form__button__delete">
-              Excluir
-            </Button>
-            <Button type="submit" className="provider-form__button__save">
-              Salvar
-            </Button>
           </div>
         </form>
       </div>
