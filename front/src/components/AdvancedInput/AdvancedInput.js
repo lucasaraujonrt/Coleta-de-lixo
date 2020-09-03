@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss'
+import './styles.css'
 import MaskedInput from 'react-input-mask';
 
 
@@ -9,14 +9,15 @@ export default function AdvancedInput({
   placeholder,
   value,
   mask,
+  size
 }) {
   return (
     <div className="advanced-input">
-      <div className="advanced-input-title">
-        <label>{label}</label>
-      </div>
-      <div className="advanced-input__input">
+      <label>{label}</label>
+      <div className="input w100">
         <MaskedInput
+          className="input w100"
+          size={size}
           mask={mask}
           onChange={onChange}
           placeholder={placeholder}

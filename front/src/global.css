@@ -10,5 +10,6 @@
 
 body{
   font: 400 14px Poppins, sans-serif;
-  background-color: #34495E
+  background-color: #34495E;
+  overflow:hidden;
 }

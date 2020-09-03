@@ -1,0 +1,21 @@
+.advanced-input{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+label{
+  color:white;    
+  font-size: 20pt;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.input{
+  margin-top:3px;
+  padding-left:5px;
+}
+
+.w100{
+  width: 100%;
+}
