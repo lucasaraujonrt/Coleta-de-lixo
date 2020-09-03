@@ -1,0 +1,11 @@
+.container-sidebar{
+  background-color: #efefef;
+  width: 100%;
+  height: calc(96% - 50px);
+}
+
+.content-sidebar{
+  width: 100%;
+  height: calc(96% - 50px);
+  background-color: red;
+}

@@ -1,0 +1,30 @@
+.container-navbar{
+  width: 100%;
+  height: 85px;
+  background-color: #B9B9AD !important;
+  align-items: center;
+}
+
+.container-content{
+  width: 80%;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #B9B9AD !important;
+  font-size: 18pt !important;
+}
+
+.container-item{
+  height: 85px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+}
+
+.active{
+  background-color: #34495E;
+}
